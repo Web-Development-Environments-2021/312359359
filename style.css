@@ -6,6 +6,10 @@
     background:rgb(46, 55, 179); 
 }
 
+.menu{
+  background-image: url('pictures/wolf.jpg') ;
+
+}
 
 
 .flex-box{

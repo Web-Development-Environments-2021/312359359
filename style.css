@@ -3,7 +3,7 @@
 	position: fixed;
 	width: 100%;
 	height: 35px;
-    background:rgb(44, 9, 139); 
+    background:rgb(46, 55, 179); 
 }
 
 
@@ -32,7 +32,7 @@
   .topnav {
     background: rgb(47, 67, 247); 
     overflow: hidden;
-    text-align:c;
+    text-align: center;
 	padding-top: 30px;
     }
     
@@ -40,9 +40,9 @@
     .topnav a {
     color: peachpuff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 18px;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     }
@@ -61,7 +61,7 @@
   .blessHeader{
     padding: 18px;
     text-align: center;
-    background: rgb(47, 67, 247);
+    background: rgb(89, 186, 241);
     color: lightyellow;
     font-size: 30px;
     background-image: url('pictures/wolf.jpg') ;
@@ -101,7 +101,7 @@
 }
 .hr-text:before {
 	content: '';
-	background:blue;
+	background:rgb(48, 101, 218);
 	position: absolute;
 	left: 0;
 	top: 50%;
@@ -116,7 +116,25 @@
 	padding: 0 .5em;
 	line-height: 1.5em;
 	color: black;
-	background-color: #a84ce6;
+	background-color: #1d63a5;
 }
-  
+.hr-text2 {
+	font-size: 20px;
+	line-height: 1em;
+	position: relative;
+	outline: 0;
+	border: 0;
+	color: black;
+	text-align: right;
+	height: 1.5em;
 
+}
+.hr-text2:after {
+	content: attr(data-content);
+	position: relative;
+	display: inline-block;
+	color: black;
+	padding: 0 .5em;
+	line-height: 1.5em;
+	color: black;
+}

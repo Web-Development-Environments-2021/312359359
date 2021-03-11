@@ -6,15 +6,10 @@
 <body>
 
 
-
-
-
 <body>
 
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="FoNPKx5T"></script>
-
-
 
 
   <div class="topnav" id="menu">
@@ -102,10 +97,10 @@
 <!-- <TD colspan=2>
   <audio src="http://www.ntonyx.com/mp3files/Morning_Flower.mp3" controls="controls">Your browser does not support the audio element.</audio>
 </TD> -->
+<iframe  width="560" height="315" position=center src="https://www.youtube.com/embed/_xwlHOfbWC0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br/>
+<br/>
 
-<iframe width="560" height="315" position=center src="https://www.youtube.com/embed/_xwlHOfbWC0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br/>
-<br/>
 </section>
 
 <section id="like" class="section">
@@ -120,8 +115,7 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
+
 <br/>
 <br/>
 <br/>
@@ -150,7 +144,18 @@
 <br/>
 <br/>
 <br/>
-<br/>
+<h3>Button with counter for people who likes to  click</h3>
+<p>
+  <a href="#" title="Love it" class="btn btn-counter multiple-count" data-count="0"><span>&#x2764;</span> Love it</a>
+  <script>$('.btn-counter').on('click', function(event, count) {
+    event.preventDefault();
+    
+    var $this = $(this),
+        count = $this.attr('data-count'),
+        active = $this.hasClass('active'),
+        multiple = $this.hasClass('multiple-count');
+        </script>
+</p>
 <br/>
 <br/>
 <br/>
@@ -158,7 +163,7 @@
 <br/>
 <br/>
 <br/><b><hr class="hr-text"  data-content="Scan My Code" >
-<img  src="pictures/qr.png" ></img>
+<div align="center" ><img  src="pictures/qr.png" ></img></div>
 
 <br/>
 <br/>
@@ -215,18 +220,6 @@
 </section>
 
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+<script></script>
 </body>
 </html>

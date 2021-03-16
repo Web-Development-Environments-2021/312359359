@@ -78,8 +78,19 @@
     border-color: rgb(47, 94, 247);
   }
 
+/* .fb-like{
+position: relative;
+left:45%; 
+} */
 
 
+.fb-like {
+  position: fixed;
+  top: 80%;
+  left: 52%;
+  margin-top: -80px;
+  margin-left: -100px;
+}
 .about {
 	
 	content: attr(data-content);

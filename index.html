@@ -3,17 +3,16 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body>
+<body style="background-color: rgb(77, 169, 231)">
   <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="FoNPKx5T"></script>
   <div class="topnav" id="menu">
-    <a href="#about">About Me</a>
-    <a href="#photos">My Photos</a>
-    <a href="#playlist">My Playlist</a>
-    <a href="#like">Like</a>
-    <a href="#qrcoder">QR code</a>
-    <a href="#spa">Q&A</a>
-    <a href="#contact">Contact Me</a>
+    <a href="#about">קצת עלי </a>
+    <a href="#photos">התמונות שלי</a>
+    <a href="#playlist">המוזיקה שלי</a>
+    <a href="#like">תנו לי לייק</a>
+    <a href="#qrcoder">סריקת ברקוד</a>
+    <a href="#spa">שאלות ותשובות</a>
+    <a href="#contact">צרו קשר</a>
 
   </div>
   <div class="blessHeader">
@@ -25,42 +24,130 @@
 
 		  
 <section id="about" class="section">
-
-
-
-<br/><b><hr class="hr-text"  data-content="About Me" ></hr></b>
+<br/><b><hr class="hr-text"  data-content="מידע על זאב" ></hr></b>
 <br/>
 <br/><hr class="hr-text2"  data-content="שם:זאב " ></hr>
 <br/><hr class="hr-text2"  data-content="שם משפחה:גוטמן " ></hr>
-<br/><hr class="hr-text2"  data-content=""
+<tr>בשנות ה80 בהיותי בן כ50, החלטתי שהעבודה אינה מספקת אותי
+  ונרשמתי ללימודי תעודה באוניברסיטת חיפה, שם למדתי במסלולים שונים (מדע המדינה, יחסי עבודה ומנהל ומנהל עסקים וכלכלה) שש שנים.
+ במקביל עסקתי כל חיי בספורט, במיוחד שחייה ויוגה</tr>
+ <br/>
+ <br/><hr class="hr-text2"  data-content="בשנים האחרונות אני מתמחה בברידג׳ ואף זכינו בטורנירים שונים בארץ" ></hr>
+
+
+<br/><hr class="hr-text2"  data-content="">
 <br/>
 <br/>
 
 </section>
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><b><hr class="hr-text"  data-content="My Photos" >
-</hr></b><br/>
-<br/>
-<img  src="pictures/saba_sabta.jpeg" position=center></img>
+  <br/><b><hr class="hr-text"  data-content="התמונות שלי" ></hr></b>
 
 <br/>
+<br/>
+
+<!-- <style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  } -->
+  <style>
+
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 20%;
+    padding: 8px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    padding-left: 2cm;
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .container {
+    padding-left: 10cm;
+
+    position: center;
+    display: none;
+    width: 35%;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+    color: white;
+    font-size: 20px;
+  }
+  
+
+  </style>
+  </head>
+  <body>
+  
+  <div style="text-align:center">
+    <h2>התמונות של זאב</h2>
+    <p>לחץ על מנת להגדיל, התמונה המוגדלת תופיע מתחת לתמונות </p>
+  </div>
+  
+  <!-- The four columns -->
+  <div class="row">
+    <div class="column">
+      <img src="pictures/saba_birthday.jpeg"  style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="pictures/saba_sabta.jpeg"  style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="pictures/saba_swim.jpeg"  style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="pictures/salon.jpeg"  style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+  <div class="container" >
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%"  >
+    <div id="imgtext"></div>
+  </div>
+  
+  <script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+    
+<br/>
+
 </section>
+
 
 <section id="playlist" class="section">
 <br/>
@@ -79,7 +166,7 @@
 <br/>
 <br/>
 <br/>
-<br/><b><hr class="hr-text"  data-content="My Playlist" >
+<br/><b><hr class="hr-text"  data-content="המוזיקה שלי" >
   <br/>
 <iframe  id ="youtube" width="700" height="315"  src="https://www.youtube.com/embed/_xwlHOfbWC0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
@@ -97,8 +184,8 @@
 
 <br/>
 <br/>
-<br/>
-<br/><b><hr class="hr-text"  data-content="give me a like" >
+<section id="like" class="section">
+<b><hr class="hr-text"  data-content="תנו לי בלייק" >
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="PrlCCyGT"></script>
 <div class="fb-like" data-href="https://web-development-environments-2021.github.io/assignment1-NivMeiri/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div><br/>
@@ -124,7 +211,7 @@
 <br/>
 <br/>
 <br/>
-<br/><b><hr class="hr-text"  data-content="Scan My Code" >
+<br/><b><hr class="hr-text"  data-content="סריקת ברקוד" >
 <div align="center" ><img  src="pictures/qr.png" ></img></div>
 
 <br/>
@@ -150,7 +237,7 @@
 <br/>
 <br/>
 
-<br/><b><hr class="hr-text"  data-content="Answer" >
+<br/><b><hr class="hr-text"  data-content="תשובה" >
 
 <br/>
 <br>
@@ -183,6 +270,20 @@
     <td width="25%">&nbsp;הרשת משתמשת בבינה מלאכותית ולומדת מה אתה רוצה ואת התוכן הזה אתה צורך בתור משתמש</td>
     <td width="25%"><b>&nbsp;תיאור הרשת</b></td>
 
+    <b>"תרחיש שימוש:חיפוש השאילתא "איזה פלאפון כדאי לקנות אנדרואיד או אייפון</b>
+    <li>
+                                                                                                                                               -Web 1.0
+      בגרסה הראשונה של הרשת החיפוש היה מאוד מהיר אך פחות יעיל- המשתמש היה צריך להכניס את הכתובת של אתרי אפל ואנדרואיד ולערוך בעצמו את ההשוואה
+    </li>
+    <li>
+   
+                                                                                                                                                                         -Web 2.0
+    גרסה השנייה כבר היו קיימים תיוגים של דפים והוא יכל לכתוב במנוע חיפוש את השאילתא ולקבל תוצאות יחסית טובות מדפים מתויגים- להיכנס לאתרים של הפלאפונים ולהשוות תכונות.    </li>
+    <li>
+                                                                                                                                                                                       Web 3.0
+      בגרסה השלישית החיפוש כבר יחזיר תוצאות רלוונטיות ואפילו תוצאות של מילים נרדפות וביטויים דומים באופיים. סביר להניח שגם קיימת השוואה כזו באינטרנט וחיפוש במנוע חיפוש יניב אותה
+    </li>
+
   </tr>
 </table><br/>
 </section>
@@ -204,11 +305,29 @@
 <br/>
 <br/>
 <br/>
-<br/><b><hr class="hr-text"  data-content="Contact me" >
+<br/><b><hr class="hr-text"  data-content="צרו קשר" >
   <br/>
-<br/>
-<div align="center"><span style="font-family: Calibri, sans-serif; font-size: 19px;" size="28" align="center">לשליחת אימייל לחץ </span><a style="font-family: Calibri, sans-serif; font-size: 19px;" id="mail" href="mailto:meiri19942@gmail.com">כאן</a></div>
-<br/>
+
+
+<section id="contact" class="section" align="center">
+  
+  <div id="contact" >
+  <form method="GET" enctype="text/plain" action="mailto:meiri19942@gmail.com"  >
+    <label class="required" for="Subject">Subject:</label><br />
+    <input id="name" class="input" name="Subject" type="text" placeholder="Subject" /><br />
+    <label class="required" for="email">Your email:</label><br />
+    <input id="email" class="input" name="email" type="text" placeholder="E-mail" /><br />
+
+    
+
+    <label class="required" for="message">Your message:</label><br />
+    <textarea  name="body" id="message" type="text"  data-emoji-picker="true" class="input" name="message" rows="7" cols="30" ></textarea><br />
+    <input id="submit_button"  type="submit" value="Send email" />
+    <input id="reset_button" type="reset" value="Reset"/>
+    
+  </form>
+  </div>
+  <br/>
 </section>
 <script>
 </script>

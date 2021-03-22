@@ -1,9 +1,10 @@
+
 #menu
 {
 	position: fixed;
 	width: 100%;
 	height: 35px;
-  background:rgb(46, 55, 179);
+  background:rgb(79, 87, 197);
   background-image: url('pictures/wolf.jpg') ;
   background-position:left;
   background-repeat: no-repeat;
@@ -78,12 +79,15 @@
     border-color: rgb(47, 94, 247);
   }
 
-/* .fb-like{
-position: relative;
-left:45%; 
-} */
 
-
+.contact2
+{
+  position: fixed;
+  top: 80%;
+  left: 52%;
+  margin-top: -80px;
+  margin-left: -100px;
+}
 .fb-like {
   position: fixed;
   top: 80%;
@@ -155,9 +159,6 @@ left:45%;
 	line-height: 1.5em;
 	color: black;
 }
-
-
-
 
 
 
@@ -247,3 +248,7 @@ p { padding-left: 10px; }
   color: #b12f27;
   text-shadow: 0 1px 0 rgba(255,255,255,0.3);
 }
+
+
+
+

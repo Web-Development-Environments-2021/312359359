@@ -109,7 +109,6 @@
 
 	
 }	
-
 .hr-text {
 	font-size: 28px;
 	line-height: 1em;
@@ -161,9 +160,6 @@
 }
 
 
-
-
-
 h3 {
   margin-top: 30px;
   font-size: 18px;
@@ -173,9 +169,6 @@ h3 {
 p { padding-left: 10px; }
 
 
-/*
- * Basic button style
- */
 .btn {
   box-shadow: 1px 1px 0 rgba(255,255,255,0.5) inset;
   border-radius: 3px;
@@ -226,9 +219,7 @@ p { padding-left: 10px; }
   z-index: 1;
   zoom: 1;
 }
-/*
- * Custom styles
- */
+
 .btn {
   background-color: #dbdbdb;
   border-color: #bbb;
@@ -248,6 +239,9 @@ p { padding-left: 10px; }
   color: #b12f27;
   text-shadow: 0 1px 0 rgba(255,255,255,0.3);
 }
+
+
+
 
 
 

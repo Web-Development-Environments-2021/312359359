@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <style>
+  .center {
+    text-align: center;
+    align-items: center;
+  }
+  </style>
   <script src="pictures/emojiPicker.js">
   </script>  
 <link rel="stylesheet" type="text/css" href="style.css" />
@@ -57,15 +64,15 @@
   <style>
 
   .column {
-    float:left;
-    width: 20%;
+    display: inline-block;
+    
+    width: 24.2%;
     padding: 4px;
   }
   
   /* Style the images inside the grid */
   .column img {
 
-  margin: 10px auto 20px;
 	display: block;
   cursor: pointer; 
   }
@@ -109,7 +116,7 @@
   </div>
   
   <!-- The four columns -->
-  <div class="row" style="margin: 30px  ;"   >
+  <div class="row " style="margin: 30px  ;"   >
     <div class="column">
       <img src="pictures/saba_birthday.jpeg"  style="width:100%" onclick="myFunction(this);">
     </div>
@@ -123,12 +130,11 @@
       <img src="pictures/salon.jpeg"  style="width:100%" onclick="myFunction(this);">
     </div>
   </div>
-  
+</div>
   <div class="container" >
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
     <img id="expandedImg" style="width:100%"  >
     <div id="imgtext"></div>
-  </div>
   
   <script>
   function myFunction(imgs) {
@@ -223,8 +229,8 @@
 <br/>
 <br/>
 <br/>
-<br/><b><hr class="hr-text"  data-content="סריקת ברקוד" >
-<div align="center" ><img  src="pictures/qr.png" ></img></div>
+<br/><b><hr class="hr-text center"  data-content="סריקת ברקוד" >
+<div class="center" ><img  src="pictures/qr.png" ></img></div>
 
 <br/>
 <br/>
@@ -253,8 +259,8 @@
 
 <br/>
 <br>
-<center><h2>3 Diffrences between WEB1.0 ,WEB 2.0 and Web3.0</h2></center>
-<table border="1" align=center cellpadding=10 cellspacing="0" bordercolor="#111111" width="100%">
+><h2 class="center">3 Diffrences between WEB1.0 ,WEB 2.0 and Web3.0</h2>
+<table border="1" class="center table" cellpadding=10 cellspacing="0" bordercolor="#111111" width="100%">
   <tr>
     <td width="25%">Web 1.0</td>
     <td width="25%"> Web 2.0</td>
@@ -309,13 +315,13 @@
 <br/>
 <br/>
 <br/>
-<br/><b><hr class="hr-text"  data-content="צרו קשר" >
+<br/><b><hr class="hr-text center"  data-content="צרו קשר" >
   <br/>
 
 
-<section id="contact" class="section" align="center">
+<section id="contact" class="section" >
   
-  <div id="contact" >
+  <div id="contact" class="center" >
   <form method="GET" enctype="text/plain" action="mailto:meiri19942@gmail.com" style= "width: 40%; margin:auto ;">
     <label class="required" for="Subject">Subject:</label><br />
     <input id="name" class="input" name="Subject" type="text" placeholder="Subject" /><br />
@@ -330,6 +336,7 @@
 
     
     <textarea  name="body" id="message" type="text"  data-emoji-picker="true" class="input" data-emoji-picker="true" name="message" rows="7" cols="30" ></textarea><br />
+    <!-- <a href="javascript:void(0)" style="position: absolute; top: 2px; right: 2px; text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 12 14"><path d="M8.9 8.4q-0.3 0.9-1.1 1.5t-1.8 0.6-1.8-0.6-1.1-1.5q-0.1-0.2 0-0.4t0.3-0.2q0.2-0.1 0.4 0t0.2 0.3q0.2 0.6 0.7 1t1.2 0.4 1.2-0.4 0.7-1q0.1-0.2 0.3-0.3t0.4 0 0.3 0.2 0 0.4zM5 5q0 0.4-0.3 0.7t-0.7 0.3-0.7-0.3-0.3-0.7 0.3-0.7 0.7-0.3 0.7 0.3 0.3 0.7zM9 5q0 0.4-0.3 0.7t-0.7 0.3-0.7-0.3-0.3-0.7 0.3-0.7 0.7-0.3 0.7 0.3 0.3 0.7zM11 7q0-1-0.4-1.9t-1.1-1.6-1.6-1.1-1.9-0.4-1.9 0.4-1.6 1.1-1.1 1.6-0.4 1.9 0.4 1.9 1.1 1.6 1.6 1.1 1.9 0.4 1.9-0.4 1.6-1.1 1.1-1.6 0.4-1.9zM12 7q0 1.6-0.8 3t-2.2 2.2-3 0.8-3-0.8-2.2-2.2-0.8-3 0.8-3 2.2-2.2 3-0.8 3 0.8 2.2 2.2 0.8 3z"></path></svg></a> -->
     <input id="submit_button"  type="submit" value="Send email" />
     <input id="reset_button" type="reset" value="Reset"/>
     
